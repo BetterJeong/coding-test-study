@@ -23,7 +23,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/git/coding-test-study/BOJ/p2447"
   }
 }]]></component>
   <component name="RunManager">
@@ -48,7 +49,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656813157259</updated>
-      <workItem from="1656813158412" duration="2327000" />
+      <workItem from="1656813158412" duration="2358000" />
+      <workItem from="1656817126350" duration="623000" />
     </task>
     <servers />
   </component>
