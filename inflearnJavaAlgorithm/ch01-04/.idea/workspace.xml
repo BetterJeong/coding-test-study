@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd363c2e-86a0-47bf-891e-3d9a09e9b3f2" name="Changes" comment="" />
+    <list default="true" id="a3c490e3-656a-41e7-b29c-608bbed2f504" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,24 +13,23 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2BPgV84spTtnAfSuQnQjj4WuVSL" />
+  <component name="ProjectId" id="2BPt2JZCdHiFcCyrhWZ7s4CFf7Y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/git/coding-test-study/BOJ/p2447&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="p2011" />
+      <module name="ch01-04" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -44,14 +43,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd363c2e-86a0-47bf-891e-3d9a09e9b3f2" name="Changes" comment="" />
-      <created>1656813157259</created>
+      <changelist id="a3c490e3-656a-41e7-b29c-608bbed2f504" name="Changes" comment="" />
+      <created>1656819342061</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1656813157259</updated>
-      <workItem from="1656813158412" duration="2358000" />
-      <workItem from="1656817126350" duration="623000" />
-      <workItem from="1656819315472" duration="26000" />
+      <updated>1656819342061</updated>
+      <workItem from="1656819343392" duration="717000" />
     </task>
     <servers />
   </component>
