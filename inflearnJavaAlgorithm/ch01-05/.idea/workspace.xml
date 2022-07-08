@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61541f98-508b-437e-8541-abddcfe175b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/p18511.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="61541f98-508b-437e-8541-abddcfe175b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +27,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/git/coding-test-study/inflearnJavaAlgorithm/ch01-05"
+    "last_opened_file_path": "C:/git/coding-test-study/BOJ/p18511"
   }
 }]]></component>
   <component name="RunManager">
@@ -64,6 +55,7 @@
       <workItem from="1657171287741" duration="4045000" />
       <workItem from="1657243546990" duration="201000" />
       <workItem from="1657252386348" duration="2475000" />
+      <workItem from="1657290299732" duration="34000" />
     </task>
     <servers />
   </component>
