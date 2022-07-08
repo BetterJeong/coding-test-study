@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61541f98-508b-437e-8541-abddcfe175b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/p18511.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BOJ/p18511/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -17,6 +23,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BPuVS6tsKYUPvNCfzsPW85GAyt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,6 +34,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/git/coding-test-study/inflearnJavaAlgorithm/ch01-05"
   }
@@ -52,10 +62,23 @@
       <option name="presentableId" value="Default" />
       <updated>1656820066179</updated>
       <workItem from="1657171287741" duration="4045000" />
+      <workItem from="1657243546990" duration="201000" />
+      <workItem from="1657252386348" duration="2475000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

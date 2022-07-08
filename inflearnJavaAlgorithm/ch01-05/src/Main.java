@@ -7,9 +7,11 @@ import static java.lang.Character.isLetter;
 public class Main {
     public static String solution(String str) {
         String r = "";
-        int[] index = new int[0];
-        int i = 0;
         char[] ch = str.toCharArray();
+        int lt = 0;
+        int rt = ch.length - 1;
+
+        
 
         return r;
     }
