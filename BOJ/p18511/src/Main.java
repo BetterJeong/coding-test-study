@@ -2,33 +2,40 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static int solution(int n ,int[] arr) {
-        int r = 0;
-        String sn = String.valueOf(n);
-        char[] ch = sn.toCharArray();
-        int pre = 0;
-        int max = 0;
+    static int n;
+    static int k;
+    static int nLen;
+    static int[] arr;
+    static int[] result;
+    static int max;
+    public static void solution(int cnt) {
+        if (cnt == nLen) {
+            int tmp = 0;
+            int j = nLen-1;
+            for (int i = 0; i < nLen; i++) {
+                tmp = result[i];
 
-        for(int j = ch.length; j > 0; j--) {
-            max = arr[0];
-            for (int i = 0; i < arr.length; i++) {
-                if (pre*10 + Character.getNumericValue(ch[j-1]) > arr[i] && max < arr[i]) {
-                    max = arr[i];
-                }
             }
-            r += (max * Math.pow(10, j));
+            return ;
         }
-
-        return r;
+        for (int i = 0; i < nLen; i++) {
+            result[cnt-1] = arr[i];
+            solution(cnt+1);
+        }
     }
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-        int[] arr = new int[k];
+        n = sc.nextInt();
+        k = sc.nextInt();
+        nLen = 0;
+        arr = new int[k];
+        max = 0;
         for (int i = 0; i < k; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(solution(n, arr));
+        for (int i = n; i > 0; i /= 10) {
+            nLen++;
+        }
+        result = new int [nLen];
     }
 }
