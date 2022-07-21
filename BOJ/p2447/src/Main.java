@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void star(int x, int y, int t) {
-        if () {
+        if(t % x == 1 && t % y == 1) {
             System.out.print(" ");
         }
         else if (t == 1) {
@@ -14,6 +14,7 @@ public class Main {
             star(x, y, t/3);
         }
     }
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());
@@ -24,5 +25,5 @@ public class Main {
             }
             System.out.println("");
         }
-     }
+    }
 }
