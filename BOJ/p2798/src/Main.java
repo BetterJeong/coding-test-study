@@ -1,12 +1,23 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Main {
-    public static int solution(ArrayList arr, int b) {
+    public static int solution(int[] arr, int b, int t) {
         int r = 0;
+            for (int i = 0; i < t - 2; i++) {
+                for (int j = i + 1; j < t - 1; j++) {
+                    for (int k = j + 1; k < t; k++)  {
+                        int n = arr[i] + arr[j] + arr[k];
+                        if (n <= b) {
+                            if (r < n) {
+                                r = n;
+                            }
+                        }
+                    }
+                }
+            }
         return r;
     }
 
@@ -16,10 +27,10 @@ public class Main {
         int t = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         st = new StringTokenizer(br.readLine());
-        ArrayList arr = new ArrayList();
+        int[] arr = new int[t];
         for (int i = 0; i < t; i++) {
-            arr.add(Integer.parseInt(st.nextToken()));
+            arr[i] = Integer.parseInt(st.nextToken());
         }
-        System.out.println(solution(arr, b));
+        System.out.println(solution(arr, b, t));
     }
 }
