@@ -16,14 +16,12 @@ public class Main {
             else if (ch[i] == ch[i+1]) {
                 cnt++;
             }
-            else if (cnt > 1) {
-                System.out.print(ch[i]);
-                System.out.print(cnt);
-                cnt = 1;
-            }
             else {
                 System.out.print(ch[i]);
                 cnt = 1;
+                if (cnt > 1) {
+                    System.out.print(cnt);
+                }
             }
         }
     }
