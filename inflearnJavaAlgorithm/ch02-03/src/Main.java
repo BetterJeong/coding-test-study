@@ -7,9 +7,6 @@ public class Main {
     public static String solution(int a, int b) {
         String s = "";
 
-        hi
-        hello
-
         return s;
     }
 
