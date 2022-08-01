@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static int solution(int n) {
-        boolean b = true;
         int k = 0;
         int r = 0;
         for (int i = 666; k < n;i++) {
