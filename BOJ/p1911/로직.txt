@@ -1,0 +1,12 @@
+l : 막대 길이
+r : 막대 개수 최솟값
+arraylist arr: 웅덩이 좌표 배열
+int done : 판자를 깐 인덱스-1 (0으로 초기화)
+
+arr 정렬: [start][last] start 기준 정렬
+
+for arr 하나씩 돌면서 길이-1까지
+	i랑 i+1이랑 범위 겹치면 합쳐
+
+for arr 하나씩 돌면서
+	판자 깔기
