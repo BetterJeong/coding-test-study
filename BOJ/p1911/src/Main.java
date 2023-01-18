@@ -16,7 +16,8 @@ public class Main {
         int n = Integer.parseInt(st.nextToken());
         int l = Integer.parseInt(st.nextToken());
         ArrayList<int[]> arr = new ArrayList<>();
-        int r = 0;
+        int wood = 0;   // 쌓은 판자 길이
+        int r = 0;  // 판자 수
 
         for (int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
@@ -31,58 +32,14 @@ public class Main {
             }
         });
 
-        // 겹치는 부분 합치기
-        for (int i = 0; i < arr.size() - 1; i++) {
-            if (arr.get(i)[1] >= arr.get(i+1)[0] && arr.get(i)[1] <= arr.get(i+1)[1]
-                    || arr.get(i+1)[1] >= arr.get(i)[0] && arr.get(i+1)[1] <= arr.get(i)[1] ) {
-                arr.get(i)[0] = min(arr.get(i)[0], arr.get(i+1)[0]);
-                arr.get(i)[1] = max(arr.get(i)[1], arr.get(i+1)[1]);
-                arr.remove(i+1);
-            }
-        }
-
-//        for (int i = 0; i < arr.size(); i++) {
-//            System.out.println("start: " + arr.get(i)[0] + " end: " + arr.get(i)[1]);
-//        }
-
-        // 첫 물 웅덩이부터 판자 깔기 시작
-        int start = arr.get(0)[0];
-        int count = 0;
-
         // 판자 수 계산
         for (int[] water : arr) {
-            int length = 0;
+            if (wood < water[0]) wood = water[0];   // 웅덩이가 새로 시작하면
 
-//            count++;
-//            System.out.println(count + "번 째 반복");
-
-            // 먼저 쌓은 판자가 범위 안에 있을 때
-            if (water[0] <= start && water[1] > start) {
-                start++;    // 쌓인 판자 다음 좌표부터 깔기 위해
-                length = water[1] - start;
+            while (wood < water[1]) {   // 웅덩이를 다 채우거나 넘길 때까지 판자 깔기
+                wood += l;
+                r++;
             }
-            // 범위 안에 없거나 바로 앞까지 깔았을 때
-            else { //  if (water[0] <= done)
-                length = water[1] - water[0];
-                start = water[0];
-            }
-
-//            System.out.println("start: "+start);
-
-            // 판자 깔기
-            if (length % l != 0) {
-                // 나머지가 있으면 하나 더 깔기
-                start = start + (length/l + 1) * l - 1;
-                r += length/l + 1;
-            }
-            else {
-                // 나머지 없으면 끝에 맞춰서 깔기
-                start = water[1];
-                r += length/l;
-            }
-
-//            System.out.println("done: " + start);
-//            System.out.println("판자 수: " + r);
         }
 
         System.out.println(r);
