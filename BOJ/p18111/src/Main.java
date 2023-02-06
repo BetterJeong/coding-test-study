@@ -34,34 +34,27 @@ public class Main {
         }
 
         for (int i = min; i <= max; i++) {
-            int restBlock = B;  // 인벤토리에 있는 블록 수
+            int inventory = B;  // 인벤토리에 있는 블록 수
             int tempTime = 0;
 
-            // 블록 먼저 파기
             for (int j = 0; j < N; j++) {
                 for (int k = 0; k < M; k++) {
+                    int blockNeeded = 0;
+                    int blockDug = 0;
+
                     if (blocks[j][k] > i) {
-                        int n = blocks[j][k] - i;
-
-                        tempTime += n * 2;
-                        restBlock += n;
+                        blockDug = blocks[j][k] - i;
                     }
-                }
-            }
-            
-            // 블록 심기
-            for (int j = 0; j < N; j++) {
-                for (int k = 0; k < M; k++) {
-                    if (blocks[j][k] < i) {
-                        int blockNeeded = i - blocks[j][k];
-
-                        tempTime += blockNeeded;
-                        restBlock -= blockNeeded;
+                    else if (blocks[j][k] < i) {
+                        blockNeeded = i - blocks[j][k];
                     }
+
+                    tempTime += blockDug * 2 + blockNeeded;
+                    inventory += blockDug - blockNeeded;
                 }
             }
 
-            if (restBlock >= 0) {
+            if (inventory >= 0) {
                 if (tempTime == time) {
                     height = Math.max(i, height);
                 }
