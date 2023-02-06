@@ -54,14 +54,9 @@ public class Main {
                 }
             }
 
-            if (inventory >= 0) {
-                if (tempTime == time) {
-                    height = Math.max(i, height);
-                }
-                else if (tempTime < time) {
-                    time = tempTime;
-                    height = i;
-                }
+            if (inventory >= 0 && tempTime <= time) {
+                time = tempTime;
+                height = i;
             }
         }
 
