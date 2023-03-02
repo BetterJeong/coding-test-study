@@ -1,0 +1,16 @@
+1
+9 5
+7 5 5 6 2 1 9 3 5
+
+정답: 9
+
+
+                System.out.println("현재 큐");
+                for (int[] arr : queue) {
+                    System.out.println("번호: " + arr[0] + "우선순위: " + arr[1]);
+                }
+                System.out.println("현재 어레이리스트");
+                for (int[] arr : arrayList) {
+                    System.out.println("번호: " + arr[0] + "우선순위: " + arr[1]);
+                }
+                System.out.println();

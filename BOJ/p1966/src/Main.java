@@ -1,58 +1,51 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
-    public static int solution(LinkedList<Integer> list, int n, int index) {
-        int r = 0;
-        int max = 0;
-        boolean b = true;
-
-        while (b) {
-            max = list.get(1);
-            for (int i = 2; i < n; i++) {
-                if (max < list.get(i)) {
-                    max = list.get(i);
-                }
-            }
-            if (list.get(0) >= max) {
-                list.remove();
-                r++;
-            }
-            else {
-                list.addLast(list.get(0));
-                list.remove();
-            }
-            if (index == 0) {
-                b = false;
-            }
-            else {
-                index--;
-                if (index < 0) {
-                    index = n;
-                }
-            }
-        }
-
-        return r;
-    }
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.parseInt(br.readLine());
-        while (t > 0) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int n = Integer.parseInt(st.nextToken());
-            int index = Integer.parseInt(st.nextToken());
+        StringTokenizer st;
+        int T = Integer.parseInt(br.readLine());
+        Queue<int[]> queue = new LinkedList<>();
+        ArrayList<int[]> arrayList = new ArrayList<>();
+
+        while (T-- > 0) {
             st = new StringTokenizer(br.readLine());
-            LinkedList<Integer> list = new LinkedList<>();
-            for (int i = 0; i < n; i++) {
-                list.add(Integer.parseInt(st.nextToken()));
+            int N = Integer.parseInt(st.nextToken());
+            int M = Integer.parseInt(st.nextToken());
+
+            st = new StringTokenizer(br.readLine());
+
+            for (int i = 0; i < N; i++) queue.add(new int[]{i, Integer.parseInt(st.nextToken())});
+
+            while (!queue.isEmpty()) {
+                Iterator<int[]> iterator = queue.iterator();
+                boolean b = false;
+
+                int priority = iterator.next()[1];
+                while (iterator.hasNext()) {
+                    if (iterator.next()[1] > priority) {
+                        b = true;
+                        break;
+                    }
+                }
+
+                if (b) queue.add(queue.poll());
+                else arrayList.add(queue.poll());
             }
-            System.out.println(solution(list, n, index));
-            t--;
+
+            for (int i = 0; i < arrayList.size(); i++) {
+                int[] arr = arrayList.get(i);
+                if (arr[0] == M) {
+                    System.out.println(i+1);
+                    break;
+                }
+            }
+
+            queue.clear();
+            arrayList.clear();
         }
     }
 }
