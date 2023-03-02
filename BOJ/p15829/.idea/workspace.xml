@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df093c2d-31a9-4145-a26d-a673d208f464" name="Changes" comment="" />
+    <list default="true" id="1cdb96eb-a80a-4f07-ab11-d7efeb26441a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +16,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2MRFqsOPwVTAVvhmV9EhsWfBwQD" />
+  <component name="ProjectId" id="2MRh97ITY78NxWFkudBT3l89rZW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,29 +33,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="p1966" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="df093c2d-31a9-4145-a26d-a673d208f464" name="Changes" comment="" />
-      <created>1677722685237</created>
+      <changelist id="1cdb96eb-a80a-4f07-ab11-d7efeb26441a" name="Changes" comment="" />
+      <created>1677736149102</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677722685237</updated>
-      <workItem from="1677722686303" duration="9416000" />
+      <updated>1677736149102</updated>
+      <workItem from="1677736150182" duration="1930000" />
     </task>
     <servers />
   </component>
