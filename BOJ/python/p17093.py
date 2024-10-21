@@ -10,6 +10,6 @@ for i in Q:
         for k in range(2):
             t += abs(i[k]-j[k])**2
 
-        m = t if t > m else m
+        m = max(t, m)
 
 print(m)
