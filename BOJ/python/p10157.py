@@ -6,7 +6,7 @@ dx = [1, 0, -1, 0]
 dy = [0, 1, 0, -1]
 c = 0
 
-if K > C*R:
+if K > C * R:
     print(0)
 else:
     for i in range(1, K):
@@ -14,7 +14,7 @@ else:
         nx = x + dx[c]
         ny = y + dy[c]
 
-        if R > nx >= 0 == matrix[nx][ny] and 0 <= ny < C:
+        if 0 <= nx < R and 0 <= ny < C and matrix[nx][ny] == 0:
             x = nx
             y = ny
         else:
@@ -22,5 +22,4 @@ else:
             x += dx[c]
             y += dy[c]
 
-    print(x + 1, y + 1)
-
+    print(y + 1, x + 1)
