@@ -4,12 +4,8 @@ r = 0
 while True:
     if len(s) == 1:
         print(r)
-        if s[0] % 3 == 0:
-            print("YES")
-        else:
-            print("NO")
+        print("YES" if s[0] % 3 == 0 else "NO")
         break
 
-    t = sum(s)
-    s = list(map(int, str(t)))
+    s = list(map(int, str(sum(s))))
     r += 1
