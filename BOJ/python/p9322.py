@@ -17,6 +17,7 @@ for i in range(T):
         for k in range(n):
             if j == li2[k]:
                 s.append(k)
+                break
 
     for k in s:
         print(c[k] + " ")
