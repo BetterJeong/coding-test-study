@@ -1,4 +1,5 @@
 import sys
+
 input = sys.stdin.readline
 
 def main():
@@ -7,11 +8,11 @@ def main():
 
     MAX_ID = 1000000
     prev = [0] * (MAX_ID + 1)
-    nxt  = [0] * (MAX_ID + 1)
+    nxt = [0] * (MAX_ID + 1)
 
     for i, cur in enumerate(t):
         prev[cur] = t[i-1] if i > 0 else t[-1]
-        nxt[cur]  = t[i+1] if i < N-1 else t[0]
+        nxt[cur] = t[i+1] if i < N-1 else t[0]
 
     out = []
     for _ in range(M):
